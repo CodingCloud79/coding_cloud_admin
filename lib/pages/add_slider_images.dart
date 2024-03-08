@@ -50,10 +50,10 @@ class _AddSliderImagesState extends State<AddSliderImages> {
 
   Future<void> uploadImage() async{
     var fstorage = FirebaseStorage.instance.ref('sliderImages/$_imageName');
-     UploadTask uploadTask = fstorage.putBlob(_byte);
+     UploadTask uploadTask = fstorage.putBlob(_byte ,SettableMetadata(contentType: 'image/jpg'));
      await uploadTask;
      String durl = await fstorage.getDownloadURL();
-     log(durl);
+     print(durl);
   }
 
   @override
