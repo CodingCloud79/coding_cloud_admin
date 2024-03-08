@@ -1,14 +1,9 @@
-import 'dart:developer';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:coding_cloud_admin/pages/add_slider_images.dart';
 import 'package:coding_cloud_admin/pages/users_data.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../firebase/firebase_service.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -34,14 +29,14 @@ class _DashboardState extends State<Dashboard> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => AddSliderImages(),
+                    builder: (context) => const AddSliderImages(),
                   ),
                 );
               },
               child: Container(
                 height: 250,
                 width: 300,
-                padding: EdgeInsets.only(bottom: 10),
+                padding: const EdgeInsets.only(bottom: 10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   color: Colors.blueAccent[100],
@@ -56,7 +51,7 @@ class _DashboardState extends State<Dashboard> {
                       color: Colors.grey.withOpacity(0.4),
                       spreadRadius: 3,
                       blurRadius: 16,
-                      offset: Offset(0, 15),
+                      offset: const Offset(0, 15),
                     )
                   ],
                 ),
@@ -64,7 +59,7 @@ class _DashboardState extends State<Dashboard> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      padding: EdgeInsets.all(8),
+                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(21),
@@ -113,7 +108,7 @@ class _DashboardState extends State<Dashboard> {
               child: Container(
                 height: 250,
                 width: 300,
-                padding: EdgeInsets.only(bottom: 10),
+                padding: const EdgeInsets.only(bottom: 10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   color: Colors.blueAccent[100],
@@ -128,7 +123,7 @@ class _DashboardState extends State<Dashboard> {
                       color: Colors.grey.withOpacity(0.4),
                       spreadRadius: 3,
                       blurRadius: 16,
-                      offset: Offset(0, 15),
+                      offset: const Offset(0, 15),
                     )
                   ],
                 ),
@@ -136,7 +131,7 @@ class _DashboardState extends State<Dashboard> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      padding: EdgeInsets.all(8),
+                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(21),
